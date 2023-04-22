@@ -154,7 +154,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello:
+      "有什么可以帮你的吗?如果你没有API key 和 密码，可以访问这个链接：https://docs.qq.com/doc/DZHJ0ekVOcFJQb2Z4 这里我提供了一些免费的账号和API key",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>
