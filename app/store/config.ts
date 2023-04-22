@@ -133,3 +133,10 @@ export const useAppConfig = create<ChatConfigStore>()(
     },
   ),
 );
+
+export const MySelfContent = {
+  yin_liu:
+    "如果你没有API key 和 密码，可以访问这个链接：https://docs.qq.com/doc/DZHJ0ekVOcFJQb2Z4 这里我提供了一些免费的账号和API key",
+  yin_liu_en:
+    "Click on this link：https://docs.qq.com/doc/DZHJ0ekVOcFJQb2Z4 , I have prepared some free ChatGPT accounts and OpenAI keys.",
+};

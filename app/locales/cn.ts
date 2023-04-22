@@ -1,9 +1,9 @@
-import { SubmitKey } from "../store/config";
+import { SubmitKey, MySelfContent } from "../store/config";
 
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "现在是未授权状态，请点击左下角设置按钮输入访问密码。",
+    Unauthorized: `现在是未授权状态，请点击左下角设置按钮输入访问密码。${MySelfContent.yin_liu}`,
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -154,8 +154,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello:
-      "有什么可以帮你的吗?如果你没有API key 和 密码，可以访问这个链接：https://docs.qq.com/doc/DZHJ0ekVOcFJQb2Z4 这里我提供了一些免费的账号和API key",
+    BotHello: `有什么可以帮你的吗? ${MySelfContent.yin_liu}`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>

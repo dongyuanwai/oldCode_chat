@@ -1,11 +1,10 @@
-import { SubmitKey } from "../store/config";
+import { SubmitKey, MySelfContent } from "../store/config";
 import type { LocaleType } from "./index";
 
 const en: LocaleType = {
   WIP: "WIP...",
   Error: {
-    Unauthorized:
-      "Unauthorized access, please enter access code in settings page.",
+    Unauthorized: `Unauthorized access, please enter access code in settings page.${MySelfContent.yin_liu_en}`,
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} messages`,
@@ -158,7 +157,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    BotHello: `Hello! How can I assist you today?${MySelfContent.yin_liu_en}`,
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
