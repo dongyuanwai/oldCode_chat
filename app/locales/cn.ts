@@ -1,10 +1,9 @@
-import { SubmitKey } from "../store/config";
+import { SubmitKey, MySelfContent } from "../store/config";
 
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-      "现在是未授权状态，请点击左下角[设置](/#/settings)按钮输入访问密码。",
+    Unauthorized: `现在是未授权状态，请点击左下角[设置](/#/settings)按钮输入访问密码。${MySelfContent.yin_liu}`,
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -167,8 +166,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
-    Error: "出错了，稍后重试吧",
+    BotHello: `有什么可以帮你的吗？${MySelfContent.yin_liu}`,
+    Error: `出错了，稍后重试吧${MySelfContent.yin_liu}`,
     Prompt: {
       History: (content: string) =>
         "这是 ai 和用户的历史聊天总结作为前情提要：" + content,
